@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
+var _a, _b, _c;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CatsController = void 0;
 const common_1 = require("@nestjs/common");
@@ -50,21 +51,21 @@ __decorate([
     (0, common_1.Get)(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Promise)
+    __metadata("design:returntype", typeof (_a = typeof Promise !== "undefined" && Promise) === "function" ? _a : Object)
 ], CatsController.prototype, "findAll", null);
 __decorate([
     (0, roles_decorator_1.Roles)('tf', 'mrg'),
     (0, common_1.Post)('/mrg'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Promise)
+    __metadata("design:returntype", typeof (_b = typeof Promise !== "undefined" && Promise) === "function" ? _b : Object)
 ], CatsController.prototype, "findAllMRG", null);
 __decorate([
     (0, roles_decorator_1.Roles)('tf'),
     (0, common_1.Post)('/tf'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Promise)
+    __metadata("design:returntype", typeof (_c = typeof Promise !== "undefined" && Promise) === "function" ? _c : Object)
 ], CatsController.prototype, "findAllTF", null);
 __decorate([
     (0, common_1.Get)(':id'),

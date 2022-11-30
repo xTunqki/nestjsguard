@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TfController = void 0;
 const common_1 = require("@nestjs/common");
@@ -27,7 +28,7 @@ __decorate([
     (0, roles_decorator_1.Roles)('TF_COMPANY'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Promise)
+    __metadata("design:returntype", typeof (_a = typeof Promise !== "undefined" && Promise) === "function" ? _a : Object)
 ], TfController.prototype, "findAll", null);
 TfController = __decorate([
     (0, common_1.UseGuards)(roles_guard_1.RolesGuard),
